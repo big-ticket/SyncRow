@@ -18,11 +18,19 @@
 			}
 		</style>
 		<title>SyncRow</title>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SFGWPL795"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-9SFGWPL795');
+		</script>
 	</head>
 	<body>
 		<!-- Structure the sections of inputs/pictures we need to have in the HTML -->
 		<div id="app">
-			<div class="title"><b><u>SyncRow</u></b><br><i>by B. Taeshic Chung</i></div>
+			<div class="title">SyncRow<div class="credit">by B. Taeshic Chung</div></div>
 			<div class="settings">
 				<div class="inputHolder">
 					<input type="number" id="cadence" alt="Cadence" placeholder="Rating">
@@ -60,6 +68,35 @@
 					<source src="./sounds/finish.wav" type="audio/wav">
 				</audio>
 			</div>
+			<table>
+				<tbody>
+					<tr>
+						<th>SyncRow Pacings</th>
+						<th>Rate</th>
+						<th>Drive Time</th>
+					</tr>
+					<tr>
+						<td>Tech Row</td>
+						<td>14 - 17</td>
+						<td>2.25 - 1.853s</td>
+					</tr>
+					<tr>
+						<td>Steady State</td>
+						<td>18 - 24</td>
+						<td>1.75 - 1.31s</td>
+					</tr>
+					<tr>
+						<td>Race Pace</td>
+						<td>25 - 31</td>
+						<td>1.26 - 1.02s</td>
+					</tr>
+					<tr>
+						<td>Sprint To Finish</td>
+						<td>32 - 38</td>
+						<td>0.98 - 0.829s</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 		<!-- Once the elements are on the page, run the javascript to interact with all of it -->
 		<script src="./app.js"></script>

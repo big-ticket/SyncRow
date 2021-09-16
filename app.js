@@ -204,11 +204,8 @@ async function changeColors(){
  */
 async function showCatchColor(){
 	// Show the rower's catch color
+	elem_rower.classList.remove("finish");
 	elem_rower.classList.add("catch");
-	// Wait for the duration we need to show the color
-	await wait(colorChangeDuration, "catchColor");
-	// Switch back to the default rower color
-	elem_rower.classList.remove("catch");
 }
 
 /**
@@ -216,11 +213,8 @@ async function showCatchColor(){
  */
 async function showFinishColor(){
 	// Show the rower's finish color
+	elem_rower.classList.remove("catch");
 	elem_rower.classList.add("finish");
-	// Wait for the duration we need to show the color
-	await wait(colorChangeDuration, "finishColor");
-	// Switch back to the default rower color
-	elem_rower.classList.remove("finish");
 }
 
 /**
